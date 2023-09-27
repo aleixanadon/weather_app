@@ -6,6 +6,8 @@ header {
     align-items: center;
     background-color: var(--charcoal-color);
     padding: 0em 2em;
+    position: sticky;
+    top: 0;
 }
 
 .title {
