@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+:root {
+    --lavender-color: #D1CCDC;
+    --charcoal-color: #424C55;
+    --lavender-blush-color: #F5EDF0;
+    --cinereous-color: #886F68;
+    --van-dyke-color: #3D2C2E;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}

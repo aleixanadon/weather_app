@@ -1,0 +1,56 @@
+@import '../../../App.css';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--charcoal-color);
+    padding: 0em 2em;
+}
+
+.title {
+    width: 50%;
+    color: #fff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+header > nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 40px;
+    width: 60%;
+}
+
+input[type="search"] {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    width: 100%;
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+header > div {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        display: none;
+    }
+    header > nav {
+        margin: 1em;
+    }
+    input[type="search"] {
+        width: 150px;
+    }
+}
