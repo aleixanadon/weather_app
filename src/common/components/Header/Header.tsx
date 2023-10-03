@@ -1,5 +1,5 @@
 import LocationButton from '../LocationButton/LocationButton';
-import InputSearch from '../SearchInput/InputSearch';
+import InputSearch from '../InputSearch/InputSearch';
 import SelectTemperatureScale from '../SelectTemperatureScale/SelectTemperatureScale';
 import Title from '../Title/Title';
 import './header.css';
