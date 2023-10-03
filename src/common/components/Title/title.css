@@ -1,0 +1,7 @@
+@import '../../../App.css';
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: var(--primary-gap);
+}

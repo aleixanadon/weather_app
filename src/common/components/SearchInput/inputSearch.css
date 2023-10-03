@@ -1,0 +1,19 @@
+@import '../../../App.css';
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: var(--primary-gap);
+    border-radius: 10px;
+    background-color: var(--primary-grey);
+    padding: 1em;
+}
+
+input[type="search"] {
+    border: none;
+    background-color: transparent;
+}
+
+input[type="search"]:focus {
+    outline: none;
+}

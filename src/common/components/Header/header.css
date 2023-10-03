@@ -1,58 +1,19 @@
 @import '../../../App.css';
 
-header {
+.top-header {
+    padding: 1em 20em;
+    background-color: var(--secondary-grey);
+}
+
+.bot-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    background-color: var(--charcoal-color);
-    padding: 0em 2em;
-    position: sticky;
-    top: 0;
+    padding: 0 20em;
 }
 
-.title {
-    width: 50%;
-    color: #fff;
-    font-size: 1em;
+.bot-sub-header {
     display: flex;
     align-items: center;
-    gap: 1em;
-}
-
-header > nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1em;
-    padding: 1em;
-    background-color: #fff;
-    border-radius: 40px;
-    width: 60%;
-}
-
-input[type="search"] {
-    background-color: transparent;
-    border: none;
-    font-size: 1em;
-    width: 100%;
-}
-
-input[type="search"]:focus {
-    outline: none;
-}
-
-header > div {
-    width: 50%;
-}
-
-@media (max-width: 768px) {
-    h1 {
-        display: none;
-    }
-    header > nav {
-        margin: 1em;
-    }
-    input[type="search"] {
-        width: 150px;
-    }
+    gap: var(--primary-gap);
 }

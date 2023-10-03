@@ -6,6 +6,16 @@
     --lavender-blush-color: #F5EDF0;
     --cinereous-color: #886F68;
     --van-dyke-color: #3D2C2E;
+
+    --very-dark-blue: #03045E;
+    --strong-blue: #0077B6;
+    --strong-cyan: #00B4D8;
+    --very-soft-cyan: #90E0EF;
+    --light-grayish-cyan: #CAF0F8;
+    --primary-grey: #D9DCEC;
+    --secondary-grey: #EBEDF8;
+
+    --primary-gap: 1em;
 }
 
 body {
