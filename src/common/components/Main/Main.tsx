@@ -1,10 +1,12 @@
-// import { useDate } from "../../../hooks/useDate";
+import { useDate } from "../../../hooks/useDate";
 import { API_RESPONSE_BY_CITY_NAME } from "../../../types/API_RESPONSE_BY_CITY_NAME";
+import CustomHeading from "../CustomHeading/CustomHeading";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 import './main.css'
 
-const Main: React.FC<{ api_response_by_city_name: API_RESPONSE_BY_CITY_NAME }> = ({ api_response_by_city_name }) => {
+const Main: React.FC<{ api_response_by_city_name: API_RESPONSE_BY_CITY_NAME, loading: boolean, magnitude: string }> = ({ api_response_by_city_name, loading }) => {
 
-/*   const {
+  const {
     coord,
     weather,
     base,
@@ -20,33 +22,32 @@ const Main: React.FC<{ api_response_by_city_name: API_RESPONSE_BY_CITY_NAME }> =
     cod
   } = api_response_by_city_name;
 
-  const { actual_datetime } = useDate(); */
+  const { actual_datetime } = useDate();
 
   return (
     <main>
-      {/* <section>
-        <article>
+      {
+        loading ? (
           <div>
-            <h2 className="city_name">{name}</h2>
-            <div className="datetime">{actual_datetime}</div>
+            <LoadingSpinner />
           </div>
-          <div>
-            <div className="main_temperature">
-              {main?.temp}º
-            </div>
-            <div>
-              <img className="weather_img" src="" alt="" />
-              <div>
-                <div className="weather_description">{weather!![0].description}</div>
-                <div className="feels_like">Feels like {main?.feels_like}º</div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article>
-          
-        </article>
-      </section> */}
+        ) : (
+          <section className="main-weather-info">
+            <article className="left-side-info">
+              <CustomHeading text={name!!} textColor="white" fontWeight="bolder" fontSize="3em" />
+              <CustomHeading text={actual_datetime!!} textColor="white" fontWeight="lighter" />
+              <hr />
+              <CustomHeading text={`${main?.temp!!}º`} textColor="white" fontWeight="bolder" fontSize="10em" />
+              <CustomHeading text={`${main?.temp_max!!}º / ${main?.temp_min!!}º`} textColor="white" fontWeight="normal" />
+              <CustomHeading text={`${weather!![0].description!!}`} textColor="white" fontWeight="normal" />
+              <CustomHeading text={`Feels likes ${main?.feels_like}º`} textColor="white" fontWeight="normal" />
+            </article>
+            <article>
+
+            </article>
+          </section>
+        )
+      }
     </main>
   )
 }

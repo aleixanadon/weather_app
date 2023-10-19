@@ -1,0 +1,8 @@
+@import '../../../App.css';
+
+.custom-heading {
+    display: flex;
+    align-items: center;
+    gap: var(--primary-gap);
+    text-transform: capitalize
+}

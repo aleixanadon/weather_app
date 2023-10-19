@@ -16,10 +16,11 @@
     --secondary-grey: #EBEDF8;
 
     --primary-gap: 1em;
+    --primary-padding: 0em 20em;
 }
 
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Gill Sans', sans-serif;
 }
